@@ -11,6 +11,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+        <link rel="icon" href="/guitar.png" />
       </Head>
       <body>
         <Main />

@@ -1,15 +1,15 @@
 import Link from "next/link";
 import Layout from "@/components/layout";
 
-function About() {
+function Blog() {
   return (
     <div>
-      <Layout title="About Us">
-        <h1>About Us</h1>
+      <Layout title="Blog">
+        <h1>Blog</h1>
         <Link href="/">Home</Link>
       </Layout>
     </div>
   );
 }
 
-export default About;
+export default Blog;
