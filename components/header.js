@@ -1,17 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "../styles/header.module.css";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
   return (
-    <header>
-      <div className="container">
-        <Image src="/img/logo.svg" alt="logo" width={300} height={40} />
+    <header className={styles.header}>
+      <div className={`conatiner ${styles.bar}`}>
+        <Link href="/">
+          <Image src="/img/logo.png" alt="logo" width={300} height={40} />
+        </Link>
 
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/about">About Us</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/store">Store</Link>
+        <nav className={styles.navigation}>
+          <Link href="/" legacyBehavior>
+            <a className={router.pathname === "/" ? styles.active : ""}>Home</a>
+          </Link>
+          <Link href="/about" legacyBehavior>
+            <a className={router.pathname === "/about" ? styles.active : ""}>
+              About Us
+            </a>
+          </Link>
+          <Link href="/blog" legacyBehavior>
+            <a className={router.pathname === "/blog" ? styles.active : ""}>
+              Blog
+            </a>
+          </Link>
+          <Link href="/store" legacyBehavior>
+            <a className={router.pathname === "/store" ? styles.active : ""}>
+              Store
+            </a>
+          </Link>
         </nav>
       </div>
     </header>
