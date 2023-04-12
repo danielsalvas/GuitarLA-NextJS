@@ -16,6 +16,11 @@ const Header = () => {
           <Link href="/" legacyBehavior>
             <a className={router.pathname === "/" ? styles.active : ""}>Home</a>
           </Link>
+          <Link href="/store" legacyBehavior>
+            <a className={router.pathname === "/store" ? styles.active : ""}>
+              Store
+            </a>
+          </Link>
           <Link href="/about" legacyBehavior>
             <a className={router.pathname === "/about" ? styles.active : ""}>
               About Us
@@ -24,11 +29,6 @@ const Header = () => {
           <Link href="/blog" legacyBehavior>
             <a className={router.pathname === "/blog" ? styles.active : ""}>
               Blog
-            </a>
-          </Link>
-          <Link href="/store" legacyBehavior>
-            <a className={router.pathname === "/store" ? styles.active : ""}>
-              Store
             </a>
           </Link>
         </nav>

@@ -9,18 +9,20 @@ const Footer = () => {
           <Link href="/" legacyBehavior>
             Home
           </Link>
+          <Link href="/store" legacyBehavior>
+            Store
+          </Link>
           <Link href="/about" legacyBehavior>
             About Us
           </Link>
           <Link href="/blog" legacyBehavior>
             Blog
           </Link>
-          <Link href="/store" legacyBehavior>
-            Store
-          </Link>
         </nav>
 
-        <p className={styles.copyright}>All Rights Reserved {new Date().getFullYear()}</p>
+        <p className={styles.copyright}>
+          All Rights Reserved {new Date().getFullYear()}
+        </p>
       </div>
     </footer>
   );
