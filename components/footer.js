@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/footer.module.css";
+import { FaRegCopyright } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,9 +21,12 @@ const Footer = () => {
           </Link>
         </nav>
 
-        <p className={styles.copyright}>
+        <div className={styles.copyright}>
           All Rights Reserved {new Date().getFullYear()}
-        </p>
+          <div className={styles.copyright__logo}>
+            <FaRegCopyright />
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -7,7 +7,7 @@ function About() {
     <div>
       <Layout title="About Us">
         <main className="container">
-          <h2 className="heading">About us</h2>
+          <h1 className="heading">About us</h1>
           <div className={styles.content}>
             <Image
               alt="Image About Us"
