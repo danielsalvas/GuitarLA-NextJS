@@ -6,7 +6,7 @@ const Guitar = ({guitar}) => {
   const { description, image, name, price, url } = guitar
   return (
     <div className={styles.guitar}>
-      <Image src={image.data.attributes.formats.medium.url} width={600} height={400} alt="guitar-image" />
+      <Image src={image.data.attributes.url} width={600} height={400} alt="guitar-image" />
       <div className={styles.content}>
         <h3>{name}</h3>
         <p className={styles.description}>{description}</p>
