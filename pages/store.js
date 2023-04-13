@@ -1,15 +1,19 @@
-import GuitarsList from "@/components/guitars-list";
+import Guitar from "@/components/guitar";
 import Layout from "@/components/layout";
+import styles from "../styles/grid.module.css"
 
 function Store({ guitars }) {
-
-  console.log(guitars);
   return (
     <div>
       <Layout title="Store">
         <main className="container">
           <h1 className="heading">Our Collection</h1>
-          <GuitarsList guitars={guitars} />
+
+          <div className={styles.grid}>
+            {guitars.map((guitar) => (
+              <Guitar key={guitar.id} guitar={guitar.attributes} />
+            ))}
+          </div>
         </main>
       </Layout>
     </div>
@@ -24,7 +28,7 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      guitars
+      guitars,
     },
   };
 }
