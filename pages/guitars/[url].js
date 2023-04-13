@@ -14,7 +14,16 @@ const Product = ({ guitar, addToCart }) => {
     e.preventDefault();
 
     if (quantity < 1) {
-      alert("Not valid quantity");
+      toast.error('Not Valid Quantity!', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
       return;
     }
 
@@ -111,14 +120,3 @@ export async function getStaticProps({ params: { url } }) {
   };
 }
 
-// export async function getServerSideProps({query: {url}}) {
-
-//     const response = await fetch(`${process.env.API_URL}/guitars?filters[url]=${url}&populate=image`);
-//     const { data: guitar } = await response.json();
-
-//     return {
-//       props: {
-//         guitar,
-//       },
-//     };
-//   }
