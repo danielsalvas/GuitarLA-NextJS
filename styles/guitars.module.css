@@ -40,7 +40,72 @@
     font-weight: 700;
     transition-property: background-color;
     transition-duration: 300ms;
+    border-radius: 10px;
 }
 .link:hover {
     background-color: var(--primary);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+.form label {
+    font-size: 2.2rem;
+}
+
+.form select{
+    border: 1px solid var(--black);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.form input[type="submit"] {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.form input[type="submit"]:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+.title__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.title__container a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.title__container a:hover {
+    background-color: var(--primary);
+    cursor: pointer;
 }

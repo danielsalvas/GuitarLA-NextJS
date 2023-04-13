@@ -1,0 +1,21 @@
+.content {
+    display: grid;
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .content {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.checkout {
+    padding: 3rem 0;
+}
+
+.summary {
+    background-color: #f9fafb ;
+    border-radius: 10px;
+    padding: 3rem;
+
+}

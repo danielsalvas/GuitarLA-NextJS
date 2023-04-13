@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/header.module.css";
 import { useRouter } from "next/router";
+import shoppingCart from "../public/car.png"
 
 const Header = () => {
   const router = useRouter();
@@ -29,6 +30,11 @@ const Header = () => {
           <Link href="/blog" legacyBehavior>
             <a className={router.pathname === "/blog" ? styles.active : ""}>
               Blog
+            </a>
+          </Link>
+          <Link href='/checkout' legacyBehavior>
+            <a>
+              <Image src={shoppingCart} height={30} width={30} alt="Shopping Cart" />
             </a>
           </Link>
         </nav>
