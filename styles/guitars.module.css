@@ -91,6 +91,19 @@
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    .title__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .title__container h3 {
+        margin: 1rem;
+    }
+  }
+
 .title__container a {
     display: block;
     text-transform: uppercase;

@@ -25,6 +25,11 @@
     align-items: center;
 }
 
+.shopping {
+    display: flex;
+    align-items: center;
+}
+
 @media (min-width: 768px){
     .navigation {
         margin: 0;

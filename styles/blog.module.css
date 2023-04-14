@@ -79,6 +79,7 @@
   font-weight: 700;
   transition-property: background-color;
   transition-duration: 300ms;
+  border-radius: 10px;
 }
 .link:hover {
   background-color: var(--primary);

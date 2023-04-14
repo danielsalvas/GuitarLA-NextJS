@@ -33,7 +33,7 @@ const Header = () => {
             </a>
           </Link>
           <Link href='/checkout' legacyBehavior>
-            <a>
+            <a className={styles.shopping}>
               <Image src={shoppingCart} height={30} width={30} alt="Shopping Cart" />
             </a>
           </Link>
